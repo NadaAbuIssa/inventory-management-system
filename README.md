@@ -5,6 +5,9 @@
 
 - Database Design: drawsql
 - API Specification: OpenAPI specification 3.1.0/Swagger
+- Backend Framework: Spring Boot
+- APIs Testing: Postman
+- Database: Mysql
 
 
 ## Table of Contents
@@ -12,8 +15,8 @@
 - [ER Diagram](#er-diagram)
 - [Features](#features)
 - [Documentation](#documentation)
+- [API Files Structure](#api-files-structure)
 - [API Specification](#api-specification)
-
 ## Description
 This is an inventory management system designed to track and manage inventory efficiently. The system focuses on four core resources: User, Address, Item, and Transaction.
 
@@ -114,6 +117,24 @@ Provide a detailed description of your inventory management system project. Expl
 
 
 ---
+## API Files Structure
+
+The structure of the project files follows the conventions of a typical Spring Boot project:
+
+├── src/                                                                             
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── main/                                                                                 
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── java/ [ controller , service , model , repository , InventoryManagementSystemRestApIsApplication.java ]                                                                        
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── resources/                                                                   
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── static/                                                                            
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── templates/                                                                    
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── application.properties                                                           
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── test/                                                                                                                                                           
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── java/                                                                     
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── postman/                                                               
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── InventoryManagementSystem.postman_collection.json                       
+│                                                          
+├── build.gradle                                                              
+└── ...                                                                                    
 
 
 ## API Specification
